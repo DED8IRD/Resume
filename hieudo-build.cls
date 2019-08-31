@@ -43,22 +43,22 @@
 
 % Name command
 \newcommand{\namesection}[2]{
-	\hspace{-1.7em}\raggedright{\parbox[b]{27em}{\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{60pt}{10pt}\selectfont #1}}
+	\hspace{-1.7em}\raggedright{\parbox[b]{27em}{\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{60pt}{12pt}\selectfont #1}}
     \hfill
-    \raggedleft{\parbox[b]{14em}{\color{headings}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{11pt}{14pt}\selectfont #2}}
+    \raggedleft{\parbox[b]{15em}{\color{headings}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{11pt}{14pt}\selectfont #2}}
 }
-\titlespacing{\section}{0pt}{0pt}{3pt}
+\titlespacing{\section}{0pt}{0pt}{15pt}
 
-% Fontaswesome circle
+% Fontawesome circle
 \def\ci#1{\textcircled{\resizebox{.5em}{!}{#1}}}
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-ExtraLight}\fontsize{18pt}{20pt}\selectfont \raggedright\uppercase}{} {0em}{}
+\scshape\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-ExtraLight}\fontsize{18pt}{24pt}\selectfont \raggedright\uppercase}{} {0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{\color{subheadings}
-\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{12pt}{14pt}\selectfont\bfseries}{}{0em}{}
+\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{12pt}{18pt}\selectfont\bfseries}{}{0em}{}
 \titlespacing{\subsection}{0pt}{5pt}{0pt}
 \titlespacing{\subsubsection}{0pt}{5pt}{0pt}
 \newcommand{\runsubsection}[1]{\color{subheadings}
@@ -68,10 +68,10 @@
 % Jobtitle command
 \newcommand{\workplace}[2]{
 \color{subheadings}\raggedright
-\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{13pt}{12pt}\selectfont\bfseries {#1} \normalfont
+\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{13pt}{22pt}\selectfont\bfseries {#1} \normalfont
 \hfill
 \color{subheadings}\raggedleft
-\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{12pt}\selectfont\bfseries {#2} \normalfont
+\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{14pt}\selectfont\bfseries {#2} \normalfont
 }
 \titlespacing{\section}{0pt}{0pt}{5pt}
 
@@ -80,7 +80,7 @@
 \titlespacing{\section}{0pt}{0pt}{3pt}
 
 % Positions command
-\newcommand{\position}[2]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{12pt}{13pt}\selectfont{#1}\normalfont
+\newcommand{\position}[2]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{12pt}{16pt}\selectfont{#1}\normalfont
 \hfill
 \color{subheadings}\raggedleft\scshape\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{11pt}{13pt}\selectfont {#2\\}\normalfont
 }

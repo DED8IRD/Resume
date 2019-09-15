@@ -24,9 +24,9 @@
 
 % Color definitions
 \definecolor{date}{HTML}{000000} 
-\definecolor{primary}{HTML}{000000}
 \definecolor{headings}{HTML}{0E0E0F}
 \definecolor{subheadings}{HTML}{1A1C1E}
+\definecolor{primary}{HTML}{000000}
 
 % Set main fonts
 \defaultfontfeatures{Mapping=tex-text}
@@ -37,7 +37,7 @@
 
 % Date format
 \DTMnewdatestyle{mylastupdate}{%
-  \renewcommand*{\DTMdisplaydate}[4]{\DTMtwodigits{##2}.\DTMtwodigits{##3}.##1}\color{date}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-ExtraLight}\fontsize{10pt}{10pt}\selectfont%
+  \renewcommand*{\DTMdisplaydate}[4]{\DTMtwodigits{##2}.\DTMtwodigits{##3}.##1}\color{date}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-ExtraLight}\fontsize{9pt}{5pt}\selectfont%
   \renewcommand*{\DTMDisplaydate}{\DTMdisplaydate}%
 }
 
@@ -47,7 +47,7 @@
     \hfill
     \raggedleft{\parbox[b]{15em}{\color{headings}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{11pt}{14pt}\selectfont #2}}
 }
-\titlespacing{\section}{0pt}{0pt}{15pt}
+\titlespacing{\section}{0pt}{0pt}{0pt}
 
 % Fontawesome circle
 \def\ci#1{\textcircled{\resizebox{.5em}{!}{#1}}}
@@ -61,7 +61,7 @@
 \fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{12pt}{18pt}\selectfont\bfseries}{}{0em}{}
 \titlespacing{\subsection}{0pt}{5pt}{0pt}
 \titlespacing{\subsubsection}{0pt}{5pt}{0pt}
-\newcommand{\runsubsection}[1]{\color{subheadings}
+\newcommand{\runsubsection}[1]{\color{primary}
 \fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{12pt}{11pt}\selectfont\bfseries {#1} \normalfont}
 \titlespacing{\section}{0pt}{0pt}{3pt}
 
@@ -95,7 +95,7 @@
 \titlespacing{\section}{0pt}{0pt}{3pt}
 
 % Section seperators command
-\newcommand{\sectionsep}[0]{\vspace{10pt}}
+\newcommand{\sectionsep}[0]{\vspace{9pt}}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep3pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}

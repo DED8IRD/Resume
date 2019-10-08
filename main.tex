@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Eunika Wu - Resume
-% 9/14/17
+% 10/04/2019
 
 \documentclass[]{hieudo-build}
 \begin{document}
@@ -17,16 +17,15 @@
 	\par
 	\ci{\faLinkedinSquare} \href{https://www.linkedin.com/in/eunika-wu/}{ linkedin.com/in/eunika-wu }
 	\par
-}
-\sectionsep \\
-\titlerule
-\smallskip
+} \\
+\sectionsep
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN ONE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{minipage}[t]{0.63\textwidth} 
+\begin{minipage}[t]{0.62\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
@@ -37,47 +36,37 @@
 \position{Dev Bootcamp Instructor}{Portland, OR}
 \vspace{\topsep}
 \begin{tightemize}
-\item Instructed \& mentored dozens of students with little-to-no programming experience to a junior full stack dev level. \\
-\item Designed \& updated curriculum to the Python Full Stack Bootcamp and the Node \& React Full Stack course. \\
+\item Instructed, designed, and updated curriculum to the Python Full Stack Bootcamp (Python/Django, Vue) and the MERN Stack course (MongoDB, Express, React, Node). \\
 \smallskip
-{\techstack{Python full stack: Python/Django, Vue, HTML, CSS, JS (ES6+)}}
-{\techstack{MERN stack: Node/Express, React, MongoDB/Mongoose}}
 \end{tightemize}
 \sectionsep
 
-\workplace{Omari.io}{Mar 2015 - Current} \\
+\workplace{Omari.io}{Mar 2015 - Jun 2019} \\
 \position{Web Developer \&  UX Researcher}{Santa Cruz, CA}
 \begin{tightemize}
-\item Conducted usability research to optimize user experience on NodingBat, an open source JavaScript coding school. \\
-\smallskip
-{\techstack{Tools used: Meteor.js, MongoDB}}
+\item Conducted usability research on NodingBat, an open source JavaScript coding school written in Meteor.js, and applied UX optimizations that improved user workflow by 200\% \\
+\item Made error feedback more responsive in the live-coding app, and added debug tools to lower barriers of entry to NodingBat's primary user base.
 \end{tightemize}
 \sectionsep
 
-\workplace{UC Santa Cruz - HCI Lab}{Sept 2016 – Nov 2017} \\
-\position{Lead Data Visualization Developer}{Santa Cruz, CA}
+\workplace{UC Santa Cruz - HCI Lab}{Jun 2017 – Nov 2017} \\
+\position{Lead Data Visualization Engineer}{Santa Cruz, CA}
 \begin{tightemize}
-\item Provided visualization and metrics for long-term cognitive behavioral therapy data and its language. \\
-\smallskip
-{\techstack{Tools used: HTML/CSS/JS, Postgres, NLTK, LIWC}}
+\item Created web app providing D3 visualizations for long-term cognitive behavioral therapy data, using NLTK and LIWC to illustrate the linguistic patterns of depression.  \\
+\item Guided final decisions on natural language processing \& design.
 \end{tightemize}
-
-\position{Android Developer \& Researcher}{}
+\sectionsep
+\position{Android Developer \& Researcher}{Sept 2016 – Jul 2017}
 \begin{tightemize}
-\item Developed GSR signal processing mobile app critical in the deployment of the Algorithmic Sensor Feedback study. \\
-\smallskip
-{\techstack{Tools used: Android Studio, Java, PipSDK}}
+\item Developed GSR signal processing mobile app  critical in the deployment of a study testing how framing can skew how we interpret realtime biofeedback on our emotional state. \\
 \item Coauthored paper detailing this study's findings published in the ACM (2018).
 \end{tightemize}
-% \item Developed Android camera app for sentiment logging used in prosthetic memory lab. \\
 \sectionsep
 
 \workplace{Xactly Corp}{Jan 2017 - Jun 2017} \\
-\position{Frontend Engineer}{San Jose, CA}
+\position{Software Engineer (Externship)}{San Jose, CA}
 \begin{tightemize}
-\item Developed data visualization dashboard that improves diagnostics for Xactly's internal support group. \\
-\smallskip
-{\techstack{Tools used: Java, Spring, React.js, Node.js, PostgresQL}}
+\item Developed data visualization dashboard using Node/React \& Java/Spring that improved and replaced the prior diagnostics toolset for Xactly's internal support team.
 \end{tightemize}
 \sectionsep
 
@@ -89,13 +78,54 @@
 % \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} 
+\workplace{University of California at Santa Cruz}{Graduated Sept 2017} \\
+\smallskip
+\position{B.A. in Computer Science}{\it{Cum Laude - 3.79}}
+\position{B.S. in Cognitive Science}{\it{Summa Cum Laude - 3.92}}
+\smallskip
+\position{\small{AI/HCI Concentration}}{Cumulative GPA: Cum Laude - 3.80}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN TWO
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.3\textwidth} 
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+\runsubsection{D.A.V.E}
+\descript{Screenplay bot}
+\normalsize Generates properly formatted bot-
+generated screenplays. Available as standalone PyPI package or web app deployed as a Dockerized EC2 instance. \\
+% \techstack{Built with Python, Django, React, NLTK} \\
+\sectionsep
+
+\runsubsection{Red}
+\descript{Natural Language Processing Q\&A Module}
+\normalsize Ask a question about a body of text and receive an answer generated from semantic dependency graphs connecting entities to others and actions. \\
+% \techstack{Built with Python, NLTK}
+\sectionsep
+
+\runsubsection{D2D}
+\descript{Nudity Filter}
+\normalsize Autodetects nudity using TensorFlow \& OCV and replaces image with duck, allowing freedom of choice to uncover, and freedom from unsolicited nudes.\\
+% \techstack{Built with OCV, TensorFlow}
+\sectionsep
+
+\runsubsection{SENTIENCE}
+\descript{Meme bot}
+\normalsize Generates OC from pages of the Weird Facebook collective using Markov chains for text and Pillow to generate images. \\
+% \techstack{Built with Python, Web2py, Vue.js, NLTK, Pillow} \\
+\sectionsep 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
@@ -107,7 +137,8 @@
 \smallskip \\
 \normalsize
   Fluent: Python, JavaScript, Java \\
-  Prior Exposure: TypeScript, C++, C
+  Familiar: TypeScript, C++, C \\
+  Learning: C\#, Dart (Flutter)
 \sectionsep
 
 \runsubsection{Backend:}
@@ -117,8 +148,8 @@
 
 \runsubsection{Frontend:}
 \normalsize
-  React, Vue,
-  jQuery, HTML5, CSS3, SASS/LESS
+  React, Vue, jQuery, \\
+  HTML5, CSS3, SASS/LESS, Responsive Design
 \sectionsep
 
 \runsubsection{Databases:}
@@ -133,10 +164,17 @@
 
 \runsubsection{Tools:}
 \normalsize
-  Git, Android Studio, 
-  Webpack, Docker, JIRA, \\
-  NLTK, SpaCy, TensorFlow, \\
+  Git, Webpack, Docker,
+  Android Studio, 
+  NLTK, SpaCy, TensorFlow, OCV, 
+  Blender, 
   Adobe Illustrator \& Photoshop
+\sectionsep
+
+% \runsubsection{Environments:}
+% \normalsize
+%   Windows, Linux/Unix
+  
 \end{flushleft}
 % \sectionsep
 
@@ -157,43 +195,8 @@
 % Da Vinci Scholar
 % \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PROJECTS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Projects}
-\runsubsection{D.A.V.E}
-\descript{Screenplay bot}
-\normalsize Generates formatted screenplays through learning from screenplay dataset. \\
-% \techstack{Built with Python, Django, React, NLTK} \\
-\sectionsep
-
-\runsubsection{SENTIENCE}
-\descript{Meme bot}
-\normalsize Generates OC learning from pages of the Weird Facebook collective. \\
-% \techstack{Built with Python, Web2py, Vue.js, NLTK, Pillow} \\
-\sectionsep 
-
-\runsubsection{NLP Q\&A Module}
-\descript{Reading comprehension module}
-\normalsize Answers questions regarding texts using natural language processing. \\
-% \techstack{Built with Python, NLTK}
-% \sectionsep
-
 \end{minipage} 
 \hfill
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\titlerule
-\sectionsep
-\section{Education} 
-\workplace{University of California at Santa Cruz}{Graduated Sept 2017} \\
-\smallskip
-\position{B.A. in Computer Science}{\it{Cum Laude - 3.79}}
-\position{B.S. in Cognitive Science - AI/HCI Concentration}{\it{Summa Cum Laude - 3.92}}
-\smallskip
-\descript{Cum. GPA: 3.80}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %     Publications
@@ -203,9 +206,9 @@
 % \descript{Hollis, V., Pekurovsky, A., \textbf{Wu, E.}, and Whittaker, S. 2018. On Being Told How We Feel: How Algorithmic
 % Sensor Feedback Influences Emotion Perception. Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 2, 3, Article 01}
 
-\begin{flushright}
-\DTMsetdatestyle{mylastupdate}
-\DTMdisplaydate{\the\year}{\the\month}{\the\day}{-1}
-\end{flushright}
+% \begin{flushright}
+% \DTMsetdatestyle{mylastupdate}
+% \DTMdisplaydate{\the\year}{\the\month}{\the\day}{-1}
+% \end{flushright}
 
 \end{document}  
